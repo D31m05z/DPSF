@@ -11,6 +11,7 @@
 namespace DPSF {
     using System;
     using System.Reflection;
+    using System.Resources;
     
     
     /// <summary>
@@ -66,7 +67,7 @@ namespace DPSF {
         /// </summary>
         internal static byte[] DPSFDefaultEffectWindowsHiDef {
             get {
-                object obj = ResourceManager.GetObject("DPSFDefaultEffectWindowsHiDef", resourceCulture);
+                object obj = ResourceManager.GetString("DPSFDefaultEffectWindowsHiDef", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -76,7 +77,7 @@ namespace DPSF {
         /// </summary>
         internal static byte[] DPSFDefaultEffectWindowsReach {
             get {
-                object obj = ResourceManager.GetObject("DPSFDefaultEffectWindowsReach", resourceCulture);
+                object obj = ResourceManager.GetString("DPSFDefaultEffectWindowsReach", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -86,7 +87,7 @@ namespace DPSF {
         /// </summary>
         internal static byte[] DPSFDefaultEffectXbox360HiDef {
             get {
-                object obj = ResourceManager.GetObject("DPSFDefaultEffectXbox360HiDef", resourceCulture);
+                object obj = ResourceManager.GetString("DPSFDefaultEffectXbox360HiDef", resourceCulture);
                 return ((byte[])(obj));
             }
         }

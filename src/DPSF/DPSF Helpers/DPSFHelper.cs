@@ -47,12 +47,7 @@ namespace DPSF
 		{
 			get 
 			{ 
-#if (WIN_RT)
 				return typeof(DPSF<DPSFParticle, DefaultNoDisplayParticleVertex>).GetTypeInfo().Assembly.GetName().Version.ToString();
-#else
-				return System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString(); 
-#endif
-
 			}
 		}
 
